@@ -1,0 +1,49 @@
+package AulaJava;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class DesafioJava {
+
+    public static void main(String[] args){
+
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        String nome, curso;
+        int periodo, faltas;
+        double nota1, nota2;
+
+        System.out.println("Preencha as seguintes informações");
+
+        System.out.println("Nome completo: ");
+        nome = sc.nextLine();
+
+        System.out.println("Nome do curso: ");
+        curso = sc.nextLine();
+
+        System.out.println("Número do período: ");
+        periodo = sc.nextInt();
+
+        System.out.println("Valor da primeira nota: ");
+        nota1 = sc.nextDouble();
+
+        System.out.println("Valor da segunda nota: ");
+        nota2 = sc.nextDouble();
+
+        System.out.println("Quantidade de faltas: ");
+        faltas = sc.nextInt();
+
+        System.out.println("Aluno: " + nome);
+        System.out.println("Curso: " + curso);
+        System.out.println("Período: " + periodo);
+        System.out.println("Primeira nota: " + nota1);
+        System.out.println("Segunda nota: " + nota2);
+        System.out.println("Quantidade de faltas: " + faltas);
+
+        Double media = (nota1 + nota2) / 2;
+        System.out.println("A média é: " + media);
+
+        sc.close();
+    }
+}
